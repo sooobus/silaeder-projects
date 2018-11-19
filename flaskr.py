@@ -40,7 +40,7 @@ def show_students_call():
 
 @app.route("/advisors/")
 def show_advisors_call():
-    return render_template('advisors.html')
+    return render_template('students.html')
 
 
 
