@@ -1,4 +1,3 @@
-#Сдесь был Дима
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
@@ -34,10 +33,6 @@ def hello():
 @app.route("/projects/<project>/")
 def show_project(project):
     return render_template('{}.html'.format(project))
-
-@app.route("/projects/polycephalum/")
-def show_project(project):
-    return render_template('phus.html')
 
 @app.route("/students/")
 def show_students_call():
