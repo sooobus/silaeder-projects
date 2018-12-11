@@ -7,13 +7,13 @@
 		<title>School Today</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="static/sy.css">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='sy.css')}}">
 	</head>
 	<body>
 		<div id="header">
 			<div class="container">
 				<div>
-					<img src="../static/logo.png" style="margin-top: 10px;" class="col-lg-1 col-md-1">
+					<img src="{{url_for('static', filename='logo.png')}}" style="margin-top: 10px;" class="col-lg-1 col-md-1">
 				</div>
 				<div>
 					<h1 class="col-lg-3 col-md-5">Cras lorem urna 
@@ -25,8 +25,8 @@ Morbi eros felis, blandit eget ullamеcorper sed. Proin nunc odio, malesuada
 maximus urna sed, efficitur </p>
 				</div>
 				<div style="padding-bottom: 70px;">
-					<img src="../static/GPlayBtn.png" class="col-lg-2 col-md-3">
-					<img src="../static/AppStoreBtn.png" class="col-lg-2 col-md-3">
+					<img src="{{url_for('static', filename='GPlayBtn.png')}}" class="col-lg-2 col-md-3">
+					<img src="{{url_for('static', filename='AppStoreBtn.png')}}" class="col-lg-2 col-md-3">
 				</div>
 			</div>
 		</div>
@@ -44,9 +44,9 @@ Morbi eros felis, blandit eget ullamcorper sed.</p>
 					<div class="row">
 						<div class="col-lg-4" style="padding: 10px 10px;">
 							<div style="background-color: #f6f6f6; padding-top: 10px; padding-bottom: 10px">
-								<img src="../static/logo.png" class="col-md-2 d-lg-none">
-								<img src="../static/logo.png" class="col-lg-2 col-md-2">
-								<img src="../static/logo.png" class="col-md-2 d-lg-none">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-md-2 d-lg-none">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-lg-2 col-md-2">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-md-2 d-lg-none">
 								<h1 class="col-lg-6 col-md-4 d-block mx-auto">suscipit</h1>
 								<p class="col-lg-10 col-md-6 d-block mx-auto">Proin nunc odio, malesuada maximus urna , 
 efficitur laoreet  Morbi eros felis, blandit 
@@ -55,9 +55,9 @@ ullamcorper sed. </p>
 						</div>
 						<div class="col-lg-4" style="padding: 10px 10px;">
 							<div style="background-color: #f6f6f6; padding-top: 10px; padding-bottom: 10px">
-								<img src="../static/logo.png" class="col-md-2 d-lg-none">
-								<img src="../static/logo.png" class="col-lg-2 col-md-2">
-								<img src="../static/logo.png" class="col-md-2 d-lg-none">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-md-2 d-lg-none">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-lg-2 col-md-2">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-md-2 d-lg-none">
 								<h1 class="col-lg-6 col-md-4 d-block mx-auto">suscipit</h1>
 								<p class="col-lg-10 col-md-6 d-block mx-auto">Proin nunc odio, malesuada maximus urna , 
 efficitur laoreet  Morbi eros felis, blandit 
@@ -66,9 +66,9 @@ ullamcorper sed. </p>
 						</div>
 						<div class="col-lg-4" style="padding: 10px 10px;">
 							<div style="background-color: #f6f6f6; padding-top: 10px; padding-bottom: 10px">
-								<img src="../static/logo.png" class="col-md-2 d-lg-none">
-								<img src="../static/logo.png" class="col-lg-2 col-md-2">
-								<img src="../static/logo.png" class="col-md-2 d-lg-none">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-md-2 d-lg-none">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-lg-2 col-md-2">
+								<img src="{{url_for('static', filename='logo.png')}}" class="col-md-2 d-lg-none">
 								<h1 class="col-lg-6 col-md-4 d-block mx-auto">suscipit</h1>
 								<p class="col-lg-10 col-md-6 d-block mx-auto">Proin nunc odio, malesuada maximus urna , 
 efficitur laoreet  Morbi eros felis, blandit 
@@ -81,7 +81,7 @@ ullamcorper sed. </p>
 			</div>
 		<div id="video">
 			<div class="row container">
-				<div class="col-lg-4"><img src="../static/video.png"></div>
+				<div class="col-lg-4"><img src="{{url_for('static', filename='video.png')}}"></div>
 				<div class="col-lg-6 col-lg-offset-1">
 					<h1>Cras lorem urna suscipit in?</h1>
 

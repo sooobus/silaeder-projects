@@ -23,7 +23,7 @@ h1 {
 }
 
 #header {
-	background: url("../img/headerBG.png") no-repeat center top;
+	background: url("headerBG.png") no-repeat center top;
 	background-attachment: relative;
 	background-position: center;
 	width: 100%;
@@ -38,7 +38,7 @@ h1 {
 
 #video
 {
-	background: url("../img/videoBG.png") no-repeat center top;
+	background: url("videoBG.png") no-repeat center top;
 	background-attachment: relative;
 	background-position: center;
 	width: 100%;
