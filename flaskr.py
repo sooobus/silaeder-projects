@@ -32,7 +32,7 @@ def hello():
 
 @app.route("/projects/<project>/")
 def show_project(project):
-    return render_template('{}.html'.format(project))
+    return render_template('crypto.html'.format(project))
 
 @app.route("/students/")
 def show_students_call():
