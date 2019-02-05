@@ -1,7 +1,8 @@
 import sqlite3
+from wtforms import Form, TextField, TextAreaField, validators, StringField, SubmitField
+import random
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
-
 # configuration
 DATABASE = 'projects.db'
 #DEBUG = True
@@ -42,7 +43,22 @@ def show_students_call():
 def show_advisors_call():
     return render_template('students.html')
 
-
+class MyForm(Form): # этот класс нужен, чтобы определить, как будет выглядеть форма
+        number = TextField('number of flips:')
+        
+@app.route("/projects/kubiki/", methods=['GET', 'POST'])
+def crypt():
+    form = MyForm(request.form)
+    number = 0
+    x=[]
+    if request.method == 'POST': 
+        number=request.form['number']
+        print(number)
+        number=int(number)
+        x=[]
+        for i in range(number):
+            x.append(random.randint(1,6))
+    return render_template('kubiki.html', form=form, number=number,x=x)
 
 
 if __name__ == '__main__':
