@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open Sans:400,800');
 body {
 	font-family: "Montserrat";
 	font-size: 12px;
@@ -11,13 +11,19 @@ body {
 h1 {
 	padding-top: 10px;
 	font-size: 30px;
-	font-family: "Poppins";
-	font-weight: bold;
+	font-family: "Open Sans";
+	font-weight: 900;
 	color: #5c6685;
 
 }
-
-
+h1.color
+{
+	padding-top: 10px;
+	font-size: 30px;
+	font-family: "Open Sans";
+	font-weight: 900;
+	color: #f5a623;
+}
 .centered {
 	text-align: center;
 }
