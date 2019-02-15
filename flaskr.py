@@ -38,7 +38,7 @@ def hello():
 def use():
     global name, number, UPLOAD_FOLDER, ALLOWED_EXTENSIONS
     name = 200
-    number = '18'
+    number = '20'
 
     UPLOAD_FOLDER = ''
     ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'bmp', 'webp'])
@@ -63,8 +63,9 @@ def allowed_file(filename):
             filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 @app.route("/image", methods = ['GET', 'POST'])
 def do3():
-        global name
         use()
+        global name
+        global number
         if request.method == "POST":
                 word = ''
                 try:
@@ -80,7 +81,6 @@ def do3():
                     from random import randint
                     number = randint(1,17)
                     number = str(number)
-                    print(number)
                 file = request.files['file']
                 file.filename = 'image.jpg'
                 if file and allowed_file(file.filename):
@@ -98,6 +98,7 @@ def do3():
                         return render_template("ornament_group.html", name = name, number = number, word = "m")
 @app.route("/check", methods = ['GET', 'POST'])
 def do4():
+    global number
     if request.method == "POST":
         ans = request.form["ans"]
         if ans == number:
